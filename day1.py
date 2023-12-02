@@ -43,8 +43,11 @@ def day1_calibration_adjust(file_name):
 def main():
     if len(sys.argv) == 3 and sys.argv[1] == 'adjust':
         day1_calibration_adjust(sys.argv[2])
-    else:
+    elif len(sys.argv) == 2:
         day1_calibration(sys.argv[1])
+    else:
+        print("python3 day1.py \"opt adjust\" datafile")
+    
 
 if __name__ == "__main__":
     main()
